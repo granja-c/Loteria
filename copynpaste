@@ -1,0 +1,136 @@
+button3 = tk.Button(text="Button3", height= 4, width = 5)
+button3.place(x = 82, y = 130)
+
+space2 = tk.Label(text="", height = 2, width = 2)
+space2.grid(row = 1, column = 0)
+
+Glabel = tk.Label(text="G", height = 2, width = 4)
+Glabel.grid(row = 1, column = 4)
+Olabel = tk.Label(text="O", height = 2, width = 4)
+Olabel.grid(row = 1, column = 5)
+
+tk.messagebox.showinfo(title = "x", message = "b1")
+
+def ifclicked():
+  if clickedbs.count("b1") > 0 and clickedbs.count("b2") > 0 and clickedbs.count("b3") > 0 and clickedbs.count("b4") > 0 and clickedbs.count("b5") > 0:
+    tk.messagebox.showinfo(title = "x", message = "Bingo!")
+  
+  if clickedbs.count("b6") > 0 and clickedbs.count("b7") > 0 and clickedbs.count("b8") > 0 and clickedbs.count("b9") > 0 and clickedbs.count("b10") > 0: 
+    tk.messagebox.showinfo(title = "x", message = "Bingo!")
+  
+  if clickedbs.count("b11") > 0 and clickedbs.count("b12") > 0 and clickedbs.count("free") > 0 and clickedbs.count("b14") > 0 and clickedbs.count("b15") > 0:
+    tk.messagebox.showinfo(title = "x", message = "Bingo!")
+  
+  if clickedbs.count("b16") > 0 and clickedbs.count("b17") > 0 and clickedbs.count("b18") > 0 and clickedbs.count("b19") > 0 and clickedbs.count("b20") > 0: 
+    tk.messagebox.showinfo(title = "x", message = "Bingo!")
+
+  if clickedbs.count("b21") > 0 and clickedbs.count("b22") > 0 and clickedbs.count("b23") > 0 and clickedbs.count("b24") > 0 and clickedbs.count("b25") > 0: 
+    tk.messagebox.showinfo(title = "x", message = "Bingo!")
+    
+  if clickedbs.count("b1") > 0 and clickedbs.count("b6") > 0 and clickedbs.count("b11") > 0 and clickedbs.count("b16") > 0 and clickedbs.count("b21") > 0: 
+    tk.messagebox.showinfo(title = "x", message = "Bingo!")
+  if clickedbs.count("b2") > 0 and clickedbs.count("b7") > 0 and clickedbs.count("b12") > 0 and clickedbs.count("b17") > 0 and clickedbs.count("b22") > 0: 
+    tk.messagebox.showinfo(title = "x", message = "Bingo!")
+  if clickedbs.count("b3") > 0 and clickedbs.count("b8") > 0 and clickedbs.count("free") > 0 and clickedbs.count("b18") > 0 and clickedbs.count("b23") > 0: 
+    tk.messagebox.showinfo(title = "x", message = "Bingo!")
+  if clickedbs.count("b4") > 0 and clickedbs.count("b9") > 0 and clickedbs.count("b14") > 0 and clickedbs.count("b19") > 0 and clickedbs.count("b24") > 0: 
+    tk.messagebox.showinfo(title = "x", message = "Bingo!")
+  if clickedbs.count("b5") > 0 and clickedbs.count("b10") > 0 and clickedbs.count("b15") > 0 and clickedbs.count("b20") > 0 and clickedbs.count("b25") > 0: 
+    tk.messagebox.showinfo(title = "x", message = "Bingo!")
+  if clickedbs.count("b1") > 0 and clickedbs.count("b7") > 0 and clickedbs.count("free") > 0 and clickedbs.count("b19") > 0 and clickedbs.count("b25") > 0: 
+    tk.messagebox.showinfo(title = "x", message = "Bingo!")
+  if clickedbs.count("b5") > 0 and clickedbs.count("b9") > 0 and clickedbs.count("free") > 0 and clickedbs.count("b17") > 0 and clickedbs.count("b21") > 0: 
+    tk.messagebox.showinfo(title = "x", message = "Bingo!")
+
+for i in range(1, 25):
+  x = "I" + str(i)
+  options.append(x)
+for i in range(1, 25):
+  x = "N" + str(i)
+  options.append(x)
+for i in range(1, 25):
+  x = "G" + str(i)
+  options.append(x)
+for i in range(1, 25):
+  x = "O" + str(i)
+  options.append(x)
+
+ canvas = tk.Canvas(window, height = 400, width = 400)
+  canvas['bg'] = pink
+  canvas.pack()
+
+      if clickedbs.count("b1") > 0 and clickedbs.count("b2") > 0 and clickedbs.count("b3") > 0 and clickedbs.count("b4") > 0 and clickedbs.count("b5") > 0:
+        tk.messagebox.showinfo(parent = self, title = "Bingo!", message = "You win!")
+      if clickedbs.count("b6") > 0 and clickedbs.count("b7") > 0 and clickedbs.count("b8") > 0 and clickedbs.count("b9") > 0 and clickedbs.count("b10") > 0: 
+        tk.messagebox.showinfo(parent = self, title = "Bingo!", message = "You win!")
+      if clickedbs.count("b11") > 0 and clickedbs.count("b12") > 0 and clickedbs.count("free") > 0 and clickedbs.count("b14") > 0 and clickedbs.count("b15") > 0:
+        tk.messagebox.showinfo(parent = self, title = "Bingo!", message = "You win!")
+      if clickedbs.count("b16") > 0 and clickedbs.count("b17") > 0 and clickedbs.count("b18") > 0 and clickedbs.count("b19") > 0 and clickedbs.count("b20") > 0: 
+        tk.messagebox.showinfo(parent = self, title = "Bingo!", message = "You win!")
+      if clickedbs.count("b21") > 0 and clickedbs.count("b22") > 0 and clickedbs.count("b23") > 0 and clickedbs.count("b24") > 0 and clickedbs.count("b25") > 0: 
+        tk.messagebox.showinfo(parent = self, title = "Bingo!", message = "You win!")
+        
+      if clickedbs.count("b1") > 0 and clickedbs.count("b6") > 0 and clickedbs.count("b11") > 0 and clickedbs.count("b16") > 0 and clickedbs.count("b21") > 0: 
+        tk.messagebox.showinfo(parent = self, title = "Bingo!", message = "You win!")
+      if clickedbs.count("b2") > 0 and clickedbs.count("b7") > 0 and clickedbs.count("b12") > 0 and clickedbs.count("b17") > 0 and clickedbs.count("b22") > 0: 
+        tk.messagebox.showinfo(parent = self, title = "Bingo!", message = "You win!")
+      if clickedbs.count("b3") > 0 and clickedbs.count("b8") > 0 and clickedbs.count("free") > 0 and clickedbs.count("b18") > 0 and clickedbs.count("b23") > 0: 
+        tk.messagebox.showinfo(parent = self, title = "Bingo!", message = "You win!")
+      if clickedbs.count("b4") > 0 and clickedbs.count("b9") > 0 and clickedbs.count("b14") > 0 and clickedbs.count("b19") > 0 and clickedbs.count("b24") > 0: 
+        tk.messagebox.showinfo(parent = self, title = "Bingo!", message = "You win!")
+        
+      if clickedbs.count("b5") > 0 and clickedbs.count("b10") > 0 and clickedbs.count("15") > 0 and clickedbs.count("b20") > 0 and clickedbs.count("b25") > 0: 
+        tk.messagebox.showinfo(parent = self, title = "Bingo!", message = "You win!")
+
+      if clickedbs.count("b1") > 0 and clickedbs.count("b7") > 0 and clickedbs.count("free") > 0 and clickedbs.count("b19") > 0 and clickedbs.count("b25") > 0: 
+        tk.messagebox.showinfo(parent = self, title = "Bingo!", message = "You win!")
+      if clickedbs.count("b5") > 0 and clickedbs.count("b9") > 0 and clickedbs.count("free") > 0 and clickedbs.count("b17") > 0 and clickedbs.count("b21") > 0: 
+        tk.messagebox.showinfo(parent = self, title = "Bingo!", message = "You win!")
+
+
+
+
+    button33 = tk.Button(self, text="N" + numberlist[7], height= 4, width = 4)
+    button33.grid(row = 3, column = 10)
+    button34 = tk.Button(self, text="G" + numberlist[8], height= 4, width = 4)
+    button34.grid(row = 3, column = 11)
+    button35 = tk.Button(self, text="O" + numberlist[9], height= 4, width = 4)
+    button35.grid(row = 3, column = 12)
+
+    button36 = tk.Button(self, text="B" + numberlist[10], height= 4, width = 4)
+    button36.grid(row = 4, column = 8)
+    button37 = tk.Button(self, text="I" + numberlist[11], height= 4, width = 4)
+    button37.grid(row = 4, column = 9)
+    freespace2 = tk.Button(self, bg = pink, text="Free\nSpace", height= 4, width = 4)
+    freespace2.grid(row = 4, column = 10)
+    button39 = tk.Button(self, text="G" + numberlist[12], height= 4, width = 4)
+    button39.grid(row = 4, column = 11)
+    button40 = tk.Button(self, text="O" + numberlist[13], height= 4, width = 4)
+    button40.grid(row = 4, column = 12)
+    
+    button41 = tk.Button(self, text="B" + numberlist[14], height= 4, width = 4)
+    button41.grid(row = 5, column = 8)
+    button42 = tk.Button(self, text="I" + numberlist[15], height= 4, width = 4)
+    button42.grid(row = 5, column = 9)
+    button43 = tk.Button(self, text="N" + numberlist[16], height= 4, width = 4)
+    button43.grid(row = 5, column = 10)
+    button44 = tk.Button(self, text="G" + numberlist[17], height= 4, width = 4)
+    button44.grid(row = 5, column = 11)
+    button45 = tk.Button(self, text="O" + numberlist[18], height= 4, width = 4)
+    button45.grid(row = 5, column = 12)
+
+    button46 = tk.Button(self, text="B" + numberlist[19], height= 4, width = 4)
+    button46.grid(row = 6, column = 8)
+    button47 = tk.Button(self, text="I" + numberlist[20], height= 4, width = 4)
+    button47.grid(row = 6, column = 9)
+    button48 = tk.Button(self, text="N" + numberlist[21], height= 4, width = 4)
+    button48.grid(row = 6, column = 10)
+    button49 = tk.Button(self, text="G" + numberlist[22], height= 4, width = 4)
+    button49.grid(row = 6, column = 11)
+    button50 = tk.Button(self, text="O" + numberlist[23], height= 4, width = 4)
+    button50.grid(row = 6, column = 12)
+
+img = Image.open(photos[0])
+    img = img.resize((53, 69))
+    pic = ImageTk.PhotoImage(img)
+    # buttonImages[0] = pic
